@@ -15,6 +15,7 @@ Use RNN to classify unstructured swc data.
  ```
 
 The specific representation is: each swc file consists of several rows, each row representing a node on a neuron, which consists of the following items:
+```sh
  ['id', 'P', 'type', 'parent', 'width', 'branch_level', 'path_length', 'degree'], where
 Id: node number;
 P: node coordinates, with the cell body as the origin, is a (x, y, z) triplet;
@@ -24,7 +25,7 @@ width: diameter of the neuron
 branch_level: node level, -1-end point
 path_length: node to cell distance
 degree: the angle between two child nodes
-
+ ```
 (3)For train and validate model:
 ```sh
 python RECTREE_train.py
@@ -46,5 +47,7 @@ bs4
 unidecode
 ```
 (5)The RNN is used to classify the neurons. Each swc file is regarded as a sequence of [node number * 10], and in front of a double-layer RNN is a CNN layer. The RNN layer through the fully connected layer outputs the classification result. The accuracy is 65%.
+
 The results are shown in the figure below.
+
 ![Image text](https://github.com/thomasaimondy/neuromorpho_neuron_type_classification/blob/master/images/result.jpg)
