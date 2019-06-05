@@ -5,14 +5,14 @@ Use RNN to classify unstructured swc data.
 (1)The goal of the mission is to classify 102,534 neurons according to their neuronal types. The first step is to divide the neurons into 'interneuron', 'principal cell', 'Glia', 'Not reported', 'sensory receptor', etc. Class, considering that the data set is mainly 'interneuron' and 'principal cell',so it can be approximated as a two-class problem.
 
 (2)The data consists of 102,534 swc files, each of which is a tree structure representation of a neuron.The data structure is as follows：
-
+```sh
  0 [0.0, 0.0, 0.0] 1 -1 7.64 0 0.0 0.0
  1 [6.54, 3.93, 0.0] 1 0 7.64 -1 7.63 0.0
  2 [-6.54, -3.93, 0.0] 1 0 7.64 -1 7.63 0.0
  3 [-4.89, 11.54, -0.27] 4 0 1.09 1 12.54 71.13
  4 [2.08, -13.49, 6.19] 3 0 0.54 1 14.99 66.08
  ……
- 
+ ```
 
 The specific representation is: each swc file consists of several rows, each row representing a node on a neuron, which consists of the following items:
  ['id', 'P', 'type', 'parent', 'width', 'branch_level', 'path_length', 'degree'], where
