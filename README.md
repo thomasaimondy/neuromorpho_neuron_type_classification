@@ -17,8 +17,8 @@ Use RNN to classify unstructured swc data.
 The specific representation is: each swc file consists of several rows, each row representing a node on a neuron, which consists of the following items:
 ```sh
  ['id', 'P', 'type', 'parent', 'width', 'branch_level', 'path_length', 'degree'], where
-Id: node number;
-P: node coordinates, with the cell body as the origin, is a (x, y, z) triplet;
+Id: node number
+P: node coordinates, with the cell body as the origin, is a (x, y, z) triplet
 type: 1-core, 2-axon, 3-the end of the dendritic, 4-apical dendrite
 parent: parent node number
 width: diameter of the neuron
