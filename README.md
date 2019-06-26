@@ -50,3 +50,9 @@ unidecode
 The results are shown in the figure below.
 
 ![Image text](https://github.com/thomasaimondy/neuromorpho_neuron_type_classification/blob/master/images/result.jpg)
+
+
+### experiment procedure
+(1) Construct the standard dataset, two classes
+(2) Tuning Tree-LSTM on it.
+
