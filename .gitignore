@@ -1,2 +1,5 @@
-data/*
-model/*
+data_model/CNN_features/*
+data_model/png_data/*
+data_model/swc_data/*
+data_model/neuromorpho_features.sql
+data_model/model/*
