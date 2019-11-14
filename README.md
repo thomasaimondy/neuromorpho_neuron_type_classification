@@ -40,18 +40,18 @@ png_r resampled_rat_img, resampled images of neurons, the treated neurons look s
 png_fc fixed_coordinate_rat_img, XY align images of neurons
 
 ##  Data catalog format
-swc is similar to png's directory format
-for example,there are two folders,train, test under swc_v0 
-There are 5 folders under train, such as principal cell, each containing prinary_cell_class same class of neurons
-There are several folders under the principal cell, such as pyrimidal, each containing the same class of neurons secondary_cell_class
-There are several folders under pyrimidal, such as Not reported, each containing the same class of neurons teritary_cell_class
-There are several swc files under Not reported
+swc is similar to png's directory format  
+for example,there are two folders,train, test under swc_v0  
+There are 5 folders under train, such as principal cell, each containing prinary_cell_class same class of neurons  
+There are several folders under the principal cell, such as pyrimidal, each containing the same class of neurons secondary_cell_class  
+There are several folders under pyrimidal, such as Not reported, each containing the same class of neurons teritary_cell_class  
+There are several swc files under Not reported  
 ## Dividing datasets
 Put all swc or png files in the same folder, run the scratch.py files, and divide the dataset into train and test sets and the large and sub-classes by modifying the last two path parameters of divide_dataset ('./png_data/v0', './png_data/png_v0', train_id),the first path is the folder before the division, and the second path is the folder after the division.
 
 # Operating instructions
 ## Environment
-Ubuntu 16.04.6 LTS 
+Ubuntu 16.04.6 LTS  
 python3.5.2  
 The required python package can be installed by running pip install -r requirements.txt
 ## Structure
@@ -63,7 +63,7 @@ _input The problem of sample equilibrium is considered in the list_file function
 ## _model
 _model The file includes the code needed to build the model, i.e. a subclass that includes a torch.nn.Module
 ## _train
-_trainA file contains code that trains or tests the data, and the required parameters and data catalogs are placed at the beginning of the file.
+_train file contains code that trains or tests the data, and the required parameters and data catalogs are placed at the beginning of the file.
 If you want to use a pretrained model, change the trained parameter to True and change the model_filename parameter to the corresponding model file name
 ## Runing the code
 Which model needs to be trained, open the corresponding _train file,comment off the corresponding part according to two or 12 categories and modify the data catalog data_dir and superparameters.
