@@ -46,7 +46,7 @@ Markdown==2.6.8
 MarkupSafe==1.1.1
 matplotlib==3.0.3
 meowlogtool==0.1.7
-mistune==0.8.4
+mistune==2.0.3
 mujoco-py==0.5.7
 munch==2.3.2
 nbconvert==5.5.0
