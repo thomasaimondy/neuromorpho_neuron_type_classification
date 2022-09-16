@@ -41,7 +41,7 @@ kiwisolver==1.1.0
 language-selector==0.1
 loggly-python-handler==1.0.0
 lxml==3.5.0
-Mako==1.0.7
+Mako==1.2.2
 Markdown==2.6.8
 MarkupSafe==1.1.1
 matplotlib==3.0.3
