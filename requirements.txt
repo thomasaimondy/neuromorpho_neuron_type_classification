@@ -65,7 +65,7 @@ Pillow==6.0.0
 pretrainedmodels==0.7.4
 prometheus-client==0.6.0
 prompt-toolkit==2.0.9
-protobuf==3.3.0
+protobuf==3.18.3
 psutil==5.4.0
 ptyprocess==0.5
 pycups==1.9.73
