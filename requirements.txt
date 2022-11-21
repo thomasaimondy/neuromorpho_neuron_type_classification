@@ -100,7 +100,7 @@ sklearn==0.0
 ssh-import-id==5.5
 stevedore==1.25.0
 system-service==0.3
-tensorflow-gpu==0.12.0rc1
+tensorflow-gpu==2.9.3
 terminado==0.8.2
 testpath==0.4.2
 tflearn==0.3.2
