@@ -8,7 +8,7 @@ bleach==3.1.0
 blessings==1.6
 Box2D-kengz==2.3.3
 box2d-py==2.3.1
-certifi==2019.3.9
+certifi==2022.12.7
 chardet==2.3.0
 colorama==0.4.1
 command-not-found==0.3
